@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "Exception Erros";
+}
+
+@if (ViewBag.ErrorTitle == null)
+
+{
+    <h3 class="text-danger">
+        An exception error occurred during the processing of the request. We will fix it as soon as possible
+    </h3>
+    <h5 class="text-info">If you need support please contact to hunglm@clamsoft.vn</h5>
+}
+else
+{
+    <h1 class="text-danger">@ViewBag.ErrorTitle</h1>
+    <h6 class="text-danger">@ViewBag.ErrorMessage</h6>
+}
